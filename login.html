@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+        }
+
+        .login-box{
+            width:380px;
+            background:#fff;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 15px 35px rgba(0,0,0,.2);
+        }
+
+        .login-box h1{
+            text-align:center;
+            margin-bottom:10px;
+            color:#333;
+        }
+
+        .login-box p{
+            text-align:center;
+            color:#777;
+            margin-bottom:30px;
+        }
+
+        .input-group{
+            margin-bottom:20px;
+        }
+
+        .input-group label{
+            display:block;
+            margin-bottom:8px;
+            font-weight:bold;
+            color:#444;
+        }
+
+        .input-group input{
+            width:100%;
+            padding:13px;
+            border:1px solid #ccc;
+            border-radius:10px;
+            outline:none;
+            font-size:15px;
+            transition:.3s;
+        }
+
+        .input-group input:focus{
+            border-color:#4facfe;
+            box-shadow:0 0 10px rgba(79,172,254,.3);
+        }
+
+        .remember{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:20px;
+            font-size:14px;
+        }
+
+        .remember a{
+            text-decoration:none;
+            color:#4facfe;
+        }
+
+        button{
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:10px;
+            background:#4facfe;
+            color:white;
+            font-size:17px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#2d8cff;
+        }
+
+        .register{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .register a{
+            text-decoration:none;
+            color:#4facfe;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+
+    <h1>Welcome</h1>
+    <p>เข้าสู่ระบบ</p>
+
+    <form>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="********" required>
+        </div>
+
+        <div class="remember">
+            <label>
+                <input type="checkbox">
+                Remember me
+            </label>
+
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div class="register">
+        Don't have an account?
+        <a href="#">Register</a>
+    </div>
+
+</div>
+
+</body>
+</html>
