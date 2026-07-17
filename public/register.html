@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/img/baby.png">
-    <title>appit</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>AppIT - Register</title>
 </head>
 <body>
-  
+    <div class="login-container">
+        <div class="login-box">
+            <h1>AppIT</h1>
+            <p>Create a new account</p>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <button type="submit" class="btn-login">Register</button>
+            </form>
+            
+            <p class="signup-link">Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+    </div>
+
+
 </body>
 </html>

@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/imxd5/AppIT#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "bcrypt": "^5.1.0",
+    "express": "^5.2.1",
+    "firebase-admin": "^11.10.0"
   }
 }
