@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .register-box {
+      width: 350px;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #5568d3;
+    }
+
+    .login {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login a {
+      color: #667eea;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="register-box">
+    <h2>สมัครสมาชิก</h2>
+
+    <form>
+      <div class="input-group">
+        <label>ชื่อผู้ใช้</label>
+        <input type="text" placeholder="กรอกชื่อผู้ใช้">
+      </div>
+
+      <div class="input-group">
+        <label>อีเมล</label>
+        <input type="email" placeholder="กรอกอีเมล">
+      </div>
+
+      <div class="input-group">
+        <label>รหัสผ่าน</label>
+        <input type="password" placeholder="สร้างรหัสผ่าน">
+      </div>
+
+      <div class="input-group">
+        <label>ยืนยันรหัสผ่าน</label>
+        <input type="password" placeholder="กรอกรหัสผ่านอีกครั้ง">
+      </div>
+
+      <button type="submit">
+        สมัครสมาชิก
+      </button>
+
+      <div class="login">
+        มีบัญชีแล้ว?
+        <a href="index.html">เข้าสู่ระบบ</a>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+</html>
